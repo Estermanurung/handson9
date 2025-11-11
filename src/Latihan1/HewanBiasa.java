@@ -1,5 +1,3 @@
-package Latihan1;
-
 package latihan1;
 
 // Class biasa tanpa abstraction (untuk perbandingan)
@@ -16,6 +14,10 @@ public class HewanBiasa {
 
     public void makan() {
         System.out.println(nama + " sedang makan");
+    }
+
+    public void tidur() {
+        System.out.println(nama + "sedang tidur");
     }
 }
 

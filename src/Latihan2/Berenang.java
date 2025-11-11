@@ -1,4 +1,9 @@
-package Latihan2;
+package latihan2;
 
-public class Berenang {
+// Buat interface Berenang
+public interface Berenang {
+    void berenang();
+    void menyelam();
+    // void berenang();
+    // void menyelam();
 }

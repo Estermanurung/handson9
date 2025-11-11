@@ -1,6 +1,8 @@
-package Latihan1;
-
 package latihan1;
+
+import latihan1.Anjing;
+import latihan1.Burung;
+import latihan1.Kucing;
 
 public class IntroToAbstractionPractice {
     public static void main(String[] args) {
@@ -17,6 +19,10 @@ public class IntroToAbstractionPractice {
         // Latihan 1: Buat beberapa object hewan dengan cara biasa
         // Masalah: Kita bisa membuat object dari class Hewan yang terlalu umum
         // Padahal di dunia nyata, tidak ada "hewan" tanpa jenis spesifik
+        HewanBiasa hewan = new HewanBiasa("Hewan Umum");
+        hewan.bersuara();
+        hewan.makan();
+        hewan.tidur();
 
         // UNCOMMENT kode di bawah dan perhatikan masalahnya
         // HewanBiasa hewan = new HewanBiasa("Hewan Umum");
@@ -33,18 +39,30 @@ public class IntroToAbstractionPractice {
         // kucing.bersuara();
         // kucing.makan();
         // kucing.tidur();
+        Kucing kucing = new Kucing("Kitty");
+        kucing.bersuara();
+        kucing.makan();
+        kucing.tidur();
 
         // Buat object Anjing
         // Anjing anjing = new Anjing("Bobby");
         // anjing.bersuara();
         // anjing.makan();
         // anjing.tidur();
+        Anjing anjing = new Anjing("Bobby");
+        anjing.bersuara();
+        anjing.makan();
+        anjing.tidur();
 
         // Buat object Burung
         // Burung burung = new Burung("Tweety");
         // burung.bersuara();
         // burung.makan();
         // burung.tidur();
+        Burung burung = new Burung("Tweety");
+        burung.bersuara();
+        burung.makan();
+        burung.tidur();
 
         // ===== DEMONSTRASI ABSTRACTION =====
         System.out.println("\n=== DEMONSTRASI ABSTRACTION ===");
@@ -52,6 +70,10 @@ public class IntroToAbstractionPractice {
         // Latihan 3: Polymorphic array
         // Buat array bertipe Hewan yang berisi berbagai jenis hewan
         // Iterasi array dan panggil method bersuara()
+        Hewan[] hewanArray = { new Kucing("Kitty"), new Anjing("Bobby"), new Burung("Tweety") };
+        for (Hewan h : hewanArray) {
+            h.bersuara();
+        }
 
         // Hewan[] hewanArray = new Hewan[3];
         // hewanArray[0] = new Kucing("Kitty");
